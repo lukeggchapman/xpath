@@ -12,6 +12,7 @@ export interface XPathSelect {
 }
 
 export function evaluate(expression: string, contextNode: Node, resolver: XPathNSResolver | null, type: number, result: XPathResult | null): XPathResult;
+export const XPathResult: XPathResult;
 
 /**
  * Evaluate an XPath expression against a DOM node.
