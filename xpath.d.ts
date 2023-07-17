@@ -11,6 +11,8 @@ export interface XPathSelect {
     (expression: string, node: Node, single: true): SelectSingleReturnType;
 }
 
+export function evaluate(expression: string, contextNode: Node, resolver: XPathNSResolver | null, type: number, result: XPathResult | null): XPathResult;
+
 /**
  * Evaluate an XPath expression against a DOM node.
  */
